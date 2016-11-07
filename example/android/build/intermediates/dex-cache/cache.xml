@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-d5c698ed906d195d4f41ced4c12b93a85c1cf0a4.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0-b721a2f0d2a649290a7dee57d825842673ecafda.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/CustomComponent/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="897ab1a7304e839bd3414512f0b0b83c8cb7afb8">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-abfa24f80e67205940b740e142e5a795a04fcd31.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1-c1ee40f0d8745af4f4e31ce85fa5c6e7470ff90e.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-363d198b6fcaa03240345f07856305ec7c12ee34.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-d25c4bf31342ad2cd0b16d42b43ad050ef1f899e.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-938b0c7c8e07db708810fd765f20a6a7dae0d0e2.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-6ed5a3bd19ed90a40022de372325322a095e4907.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/javax.inject-1-f881a43ce79b9d040f8835cd60a9a6eca551c63e.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-541ec5db110ef14ba3e917c405ffd32197ac6a54.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-dc26e772a190789cd6a43fb8b732262b6584e298.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1-7dd208f3b79537fec5022c6919615b22b1c92a4f.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-067b41a71fe5034a4e06a9d2aa10e47ed9779e5b.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-dd87c57484821f7d316d8177e0a4bc27b1da7a45.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-6f8f18e7ea23bdd09e1d80d5260d23b9b56a13cf.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.33.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="86a10a3af45f2c46b8dcfcb41220821d10794699">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-c52c88cb85cfe1b7afe5cfe61946e886904c7f67.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-e4e83bb83917b437245c0fcbc78f9befdd1f3d0b.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-936a77deb530b2a935e6300aad620b6261945720.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-d9331b7c1e9924a06018ebd3db4dc1ab0ea6aeb8.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.33.0/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="849357db0dcadfb604ea1ec3a185b276d98e997c">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-f6c100e35055a2b57099c1167eea4490779f0a1f.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1-9723230e3002172bc2396e5255e5190ecfa2d764.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-24bf1344b8befa29f4b98eee18d1309bbb539253.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-de6ad521219f976870bf578a7ddec1f2668950c6.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="12b885b3ed1fc74a51f671ad40867aa91271843d">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/classes-f3a3d1baf45151a9aa3d5115c5e9975e7ec84e61.jar" />
+    </item>
+    <item
+        jar="/Users/liujunli/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-368e999d3f1358819413b852e3e62d1318d6cbca.jar" />
+    </item>
+
+</items>

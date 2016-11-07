@@ -1,0 +1,35 @@
+{
+  "name": "react-native-custom-components",
+  "version": "1.0.0",
+  "description": "React Native custom components for iOS + Android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8088/react-native-custom-components.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-native ui",
+    "react-native component",
+    "react-native button",
+    "react-native toggle button",
+    "react-native html",
+    "react-native editor",
+    "react-native slide",
+    "react-native tabbar"
+  ],
+  "author": "8088",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/8088/react-native-custom-components/issues"
+  },
+  "homepage": "https://github.com/8088/react-native-custom-components#readme",
+  "dependencies": {
+    "react-native-keyboardevents": "^0.4.5",
+    "react-native-vector-icons": "^2.1.0",
+    "react-static-container": "^1.0.1"
+  }
+}

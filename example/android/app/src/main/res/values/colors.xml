@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="yellow">#FFFF00</color><!--黄色 -->
+    <color name="peachpuff">#FFDAB9</color><!--桃色 -->
+    <color name="gold">#FFD700</color><!--金色 -->
+    <color name="pink">#FFC0CB</color><!--粉红色 -->
+    <color name="lightpink">#FFB6C1</color><!--亮粉红色-->
+    <color name="orange">#FFA500</color><!--橙色 -->
+    <color name="red">#FF0000</color><!--红色 -->
+    <color name="beige">#F5F5DC</color><!--米色 -->
+    <color name="azure">#F0FFFF</color><!--天蓝色 -->
+    <color name="silver">#C0C0C0</color><!--银色 -->
+    <color name="brown">#A52A2A</color><!--褐色 -->
+    <color name="gray">#808080</color><!--灰色 -->
+    <color name="cyan">#00FFFF</color><!--青色 -->
+    <color name="green">#008000</color><!--绿色 -->
+    <color name="blue">#0000FF</color><!--蓝色 -->
+    <color name="black">#000000</color><!--黑色 -->
+</resources>
