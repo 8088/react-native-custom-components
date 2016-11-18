@@ -1,6 +1,6 @@
 {
-  "name": "CustomComponent",
-  "version": "0.0.1",
+  "name": "CustomComponentTest",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
@@ -11,6 +11,6 @@
     "react-native-keyboardevents": "^0.4.5",
     "react-native-vector-icons": "^2.1.0",
     "react-static-container": "^1.0.1",
-    "react-native-custom-components": "../",
+    "react-native-custom-components": "../"
   }
 }

@@ -1,5 +1,5 @@
--injars /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
--outjars /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/multi-dex/debug/componentClasses.jar
+-injars /Users/liujunli/work/www/8088_GITHUB/react-native-custom-components/example/android/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar
+-outjars /Users/liujunli/work/www/8088_GITHUB/react-native-custom-components/example/android/app/build/intermediates/multi-dex/debug/componentClasses.jar
 
 -libraryjars /Users/liujunli/Library/Android/sdk/build-tools/23.0.1/lib/shrinkedAndroid.jar
 
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **,com.android.tools.fd.**,android.support.multidex.MultiDexExtractor
 -dontwarn **
--printconfiguration /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/multi-dex/debug/components.flags
+-printconfiguration /Users/liujunli/work/www/8088_GITHUB/react-native-custom-components/example/android/app/build/intermediates/multi-dex/debug/components.flags
 
 
 -keep class com.customcomponent.MainApplication {
