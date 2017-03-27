@@ -13,25 +13,32 @@ import {
     ScrollView,
     StyleSheet,
 } from 'react-native';
-
-import {
-    Button,
-    ToggleButton,
-    HtmlView,
-    InputEditor,
-    SlideBox,
-    Tabbar,
-    Tabbody,
-} from 'react-native-custom-components';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import Network from './mixins/Network';
+
+import Button from './components/Button';
+import ToggleButton from './components/ToggleButton';
+import HtmlView from './components/HtmlView';
+import InputEditor from './components/InputEditor';
+import SlideBox from './components/SlideBox';
+import ScrollBox from './components/ScrollBox';
+import Tabbar from './components/Tabbar';
+import Tabbody from './components/Tabbody';
+import DropdownRefresh from './components/DropdownScrollView';
+
 import Topbar from './modules/Topbar';
 import Module from './modules/Module';
 
 const HTML = `
 <img src="http://img.mp.itc.cn/upload/20160922/f6729f9c3b15436cac418a02c01bba2b_th.jpeg">
 <p><span style="font-size: 14px; color:#f60;">2016年9月20日，美国纽约，美国总统奥巴马出席第71届联合国大会。图片来源：视觉中国</span></p>
+`;
+
+const HTML2 = `
+<p><b style="font-size: 16px; color:#666;">美国总统奥巴马出席第71届联合国大会</b></p>
+<img style="margin-top:5px;" src="http://img.mp.itc.cn/upload/20160922/f6729f9c3b15436cac418a02c01bba2b_th.jpeg">
+<p><span style="font-size: 14px; color:#666;">2016年9月20日，美国纽约，美国总统奥巴马出席第71届联合国大会。图片来源：视觉中国</span></p>
 `;
 
 export default class App extends Component {
@@ -49,6 +56,7 @@ export default class App extends Component {
             ],
             activeTab: 0,
             scrollValue:null,
+            htmlText:HTML,
         };
     }
 
@@ -68,6 +76,7 @@ export default class App extends Component {
             activeTab,
             tabs,
             scrollValue,
+            htmlText,
         }=this.state;
 
         return (
@@ -75,6 +84,21 @@ export default class App extends Component {
                 <StatusBar backgroundColor='rgba(255,255,255,0.1)' hidden={false} animated={true} translucent={true} barStyle='default'/>
                 <Topbar title='自定义组件'/>
                 <ScrollView style={styles.flex_1}>
+                    <Module title='焦点图轮播'>
+                        <View style={{flex:1, height:150, backgroundColor:'#999'}}>
+                            <ScrollBox dotColor={'#FE7A93'}>
+                                <View style={styles.flex_1}>
+                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
+                                </View>
+                                <View style={styles.flex_1}>
+                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
+                                </View>
+                                <View style={styles.flex_1}>
+                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
+                                </View>
+                            </ScrollBox>
+                        </View>
+                    </Module>
 
                     <View style={styles.module}>
                         <View style={styles.module_head}>
@@ -104,9 +128,9 @@ export default class App extends Component {
                         </View>
                     </View>
 
-                    <Module title='焦点图轮播'>
+                    <Module title='滑动容器'>
                         <View style={{flex:1, height:150, backgroundColor:'#999'}}>
-                            <SlideBox dotColor={'#FE7A93'}>
+                            <SlideBox>
                                 <View style={styles.flex_1}>
                                     <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
                                 </View>
@@ -119,9 +143,15 @@ export default class App extends Component {
                             </SlideBox>
                         </View>
                     </Module>
-                    <Module title='自适应HTML内容高度显示控件'>
-                        <HtmlView source={{html:HTML}} width={310}/>
-                    </Module>
+                    <View style={styles.module}>
+                        <View style={[styles.module_head, styles.flex_row, {justifyContent:'space-between',alignItems:'center', paddingHorizontal:15, paddingVertical:5,}]}>
+                            <Text style={styles.module_head_text}>自适应HTML内容高度显示控件</Text>
+                            <Button onPress={this._onRefresh} elementId={'refreshBtn'}><Icon name='ios-refresh' size={30} color='#FE7A93'/></Button>
+                        </View>
+                        <View style={styles.module_body}>
+                            <HtmlView source={{html:htmlText}} width={310}/>
+                        </View>
+                    </View>
                     <Module title='按钮控件'>
                         <View style={[styles.flex_row, styles.flex_wrap, styles.margin_bottom_10]}>
                             <Button onPress={this._onPress} style={styles.btn_default} elementId={'btn1'} >
@@ -336,6 +366,12 @@ export default class App extends Component {
     _onReset=()=>{
         var btn = this.refs.btn6;
         btn.setState({disabled:false})
+    }
+
+    _onRefresh=(evt)=>{
+        var btn = evt.target;
+        var _html = this.state.htmlText===HTML?HTML2:HTML;
+        this.setState({htmlText: _html});
     }
 
     _onPress(evt){
@@ -559,4 +595,10 @@ const styles = StyleSheet.create({
         borderBottomColor: '#eee',
         borderBottomWidth: 1,
     },
+    module_head_text:{
+        fontWeight: 'bold',
+    },
+    module_body: {
+        padding: 15,
+    }
 });

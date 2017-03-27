@@ -21,7 +21,7 @@ const HTML = `
 	<title>HTML Container</title>
 	<style type="text/css">
 	    * {margin:0; padding:0;}
-        img{ max-width:100%;height:auto;} 
+        img{ max-width:100%;height:auto;}
 	</style>
 </head>
 <body>
@@ -48,17 +48,12 @@ export default class HtmlView extends Component {
         super(props);
         this.state = {
             height: 0,
+            refresh: 0,
         };
 
-        if(props.source&&props.source.html&&props.source.html.length>0&&props.source.html.indexOf('<body>')===-1)
-        {
-            var template = HTML;
+        if(props.source) this._update(props.source);
+        else this.source = props.source;
 
-            this.source = { html: template.replace('{body}', props.source.html)}
-        }
-        else{
-            this.source = props.source;
-        }
     }
 
     componentWillMount() {
@@ -73,6 +68,10 @@ export default class HtmlView extends Component {
         `;
     }
 
+    componentWillReceiveProps(props){
+        if(props.source) this._update(props.source);
+    }
+
     render() {
         let height = this._getHeight(this.props.style);
         return (
@@ -83,6 +82,18 @@ export default class HtmlView extends Component {
                 onNavigationStateChange={this._onNavigationStateChange}
             />
         );
+    }
+
+    _update=(source)=>{
+        if(source&&source.html&&source.html.length>0&&source.html.indexOf('<body>')===-1)
+        {
+            var template = HTML;
+
+            this.source = { html: template.replace('{body}', source.html)}
+        }
+        else{
+            this.source = source;
+        }
     }
 
     _getHeight=(style)=>{
@@ -113,4 +124,3 @@ export default class HtmlView extends Component {
     }
 
 }
-
