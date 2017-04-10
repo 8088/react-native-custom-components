@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/ios/CustomComponentTests/CustomComponentTests.m \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/CustomComponentTests/CustomComponentTests.m \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h \
@@ -29,13 +29,13 @@ dependencies: \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestErrors.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTestDefines.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCTest.h \
-  ../node_modules/react-native/React/Base/RCTLog.h \
-  ../node_modules/react-native/React/Base/RCTAssert.h \
-  ../node_modules/react-native/React/Base/RCTDefines.h \
-  ../node_modules/react-native/React/Base/RCTRootView.h \
-  ../node_modules/react-native/React/Base/RCTBridge.h \
-  ../node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  ../node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  ../node_modules/react-native/React/Base/RCTBridgeModule.h \
-  ../node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  ../node_modules/react-native/React/Base/RCTInvalidating.h
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h

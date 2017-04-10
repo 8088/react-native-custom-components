@@ -196,8 +196,6 @@ const styles = StyleSheet.create({
         padding: 5,
     },
     input_text: {
-        borderWidth: 1,
-        borderColor: '#f00',
         fontSize: 14,
         height: Platform.OS==='ios'?90:100,
         paddingTop: Platform.OS==='ios'?0:-60,

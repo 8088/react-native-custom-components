@@ -16,10 +16,11 @@ import {
     ScrollView,
     Dimensions,
 } from 'react-native';
+import Colors from '../assets/Colors'
 
 const screen_width = Dimensions.get('window').width;
 
-export default class Tabbar extends Component {
+export default class Topbar extends Component {
     static propTypes = {
         toggleTab: PropTypes.func,
         activeTab: PropTypes.number,
@@ -30,12 +31,11 @@ export default class Tabbar extends Component {
         tabs: [{id:'1', name:'tab1'}, {id:'2', name:'tab2'}, {id:'3', name:'tab3'}],
         activeTab: 0,
         toggleTab: ()=> {},
-        underlineColor: '#000',
+        underlineColor: Colors.main,
     };
 
     constructor(props) {
         super(props);
-        this.tabState = [];
         this.state = {
             renderUnderline: false,
             tabScrollValue: 0,
@@ -137,6 +137,7 @@ export default class Tabbar extends Component {
 
 const styles = StyleSheet.create({
     tabs: {
+        height: 50,
         paddingRight: 20,
         alignItems: 'center',
     },
@@ -147,11 +148,10 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     tab_btn_lab: {
-        color: '#999',
+        color: Colors.deep,
     },
     active_tab_btn_lab: {
-        color: '#666',
-        fontWeight: 'bold',
-
+        color: Colors.main,
+        fontWeight: 'normal',
     },
 });

@@ -4,37 +4,30 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Entypo.ttf</key>
-		<data>
-		R4cKZ91Qhxdl95nKqX2ochnuR8U=
-		</data>
-		<key>EvilIcons.ttf</key>
-		<data>
-		QZrcvnS7qREj2zspB3XjYvIS8+U=
-		</data>
-		<key>FontAwesome.ttf</key>
-		<data>
-		YdjZZ4B+8SWY2BWC+pW59gDD7gE=
-		</data>
-		<key>Foundation.ttf</key>
-		<data>
-		SyvObHkkk6SlcWtv7C2+/olJLD8=
-		</data>
+		<key>Base.lproj/LaunchScreen.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			89YBlg4A+8zT4BYHEU3e6W1TaPk=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
-		3kP1Ki+b+w3pEUBaztwELW5jb2Q=
+		aUm0c1LLvF5BD7IVSBsGgwX3iyY=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
 		<data>
-		/Y0bIJ33xXJIw7w6ZvW1julgwac=
+		jVuquTxW/zgsDhVvtjnDjaLklQM=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
 		<data>
-		JvamJFem0IBXshxdUOCNSE0NNkI=
+		NdDKugDSZik31UagIY7DLixLXo0=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
 		<data>
-		ANv/khqWESPV0lU5ItOnXBRevbM=
+		oJil3U1d5lvNs+UAiDae04BI/2g=
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCAbstractTest.h</key>
 		<data>
@@ -114,7 +107,7 @@
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCUICoordinate.h</key>
 		<data>
-		rWeryK2BMCp9F3/mp9BKm7kg/1Q=
+		h93xArf56RHLG0oQUpJsVrR2esg=
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCUIDevice.h</key>
 		<data>
@@ -122,7 +115,7 @@
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCUIElement.h</key>
 		<data>
-		uzgoVBBig+CJOMv+jyGE6Ou4lx0=
+		lCooSq4totv00z9Cpjsf3qZk1fw=
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCUIElementAttributes.h</key>
 		<data>
@@ -134,11 +127,11 @@
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCUIElementTypeQueryProvider.h</key>
 		<data>
-		DEWr4Nmwz7JAy6EydZYQIYgpTlE=
+		hRIiU4QCL7DtuacVXjl7A5M0MNo=
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCUIElementTypes.h</key>
 		<data>
-		KfkqELrdD/Tb6UOCWX6a7rizJmE=
+		U3yZ50UN++NXOpSMIy49comcTwc=
 		</data>
 		<key>Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h</key>
 		<data>
@@ -150,7 +143,7 @@
 		</data>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<data>
-		o+6HjeXHIRU2pTtYGPfLcQ6ewRg=
+		zUEJesmFI6/+tEAh5MVteZyrRHQ=
 		</data>
 		<key>Frameworks/XCTest.framework/Modules/module.modulemap</key>
 		<data>
@@ -158,47 +151,47 @@
 		</data>
 		<key>Frameworks/XCTest.framework/TextBasedStubs/XCTest.tbd</key>
 		<data>
-		RHXSWYnDetHKL50HLNwIgcxIwd8=
+		a88XIbyyK4c/LWXFfuMspfqry7g=
 		</data>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<data>
-		SuG8biVyYepPfL6D7yYEC2CTw2M=
+		t9uj1OstrX62LTg72x/llY1Hf+4=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/Info.plist</key>
 		<data>
-		daPcUHeI7smI+bfNH/gYfd2XsCw=
+		kyL3MKt/Hh8S9COPUG40xFkWaoQ=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/XCUIRecorderService</key>
 		<data>
-		nRgHY0yfSkh+Rsgag2hvfV9HRVU=
+		FTrFhh0TgN5L8ZN5V3a8cErMdnw=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		MfcuT2iwFIPWAvNoShXgpSYyxn0=
+		NULa62Q9Ekagp5J6vYhXotN9g8s=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/version.plist</key>
 		<data>
-		6nbxw2NOojRpBQBLYqyQ0AtTz9Q=
+		R/va6aDhjzoXMhgC4CJPpstvJEw=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/Info.plist</key>
 		<data>
-		89+xmnpwc51/kL9aWeisnKZ8Znw=
+		i1ilUYSCt6kbw9IUS/EVTKdd4Dg=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/_CodeSignature/CodeResources</key>
 		<data>
-		hiVUAijYQPVQpb+mOEOKzyxTBsY=
+		BktQ1TcUZ2SPLbuBj29VfoZRncc=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/version.plist</key>
 		<data>
-		6nbxw2NOojRpBQBLYqyQ0AtTz9Q=
+		R/va6aDhjzoXMhgC4CJPpstvJEw=
 		</data>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/xctestSymbolicator</key>
 		<data>
-		4P97BUzWBX1rxzp6PbF0u5ztZww=
+		UtWzzDx9xpDYmZ+MGvYZEdPL8Nw=
 		</data>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Fm/OuS34FElDdS/yIzfDiggzzgQ=
+		udvTC+ZuRS0sZMsV7q9HYTPdYWQ=
 		</data>
 		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -211,23 +204,11 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/version.plist</key>
 		<data>
-		NC0s8Ltayn5g2lVdYHthxSDTX7s=
-		</data>
-		<key>Info.plist</key>
-		<data>
-		wSXQZ1ouc5yr+CYxSwPOIX9+Z/k=
+		yjBcTcl/az9WjdyHWVRj7ess7M4=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
 		D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
-		</data>
-		<key>MaterialIcons.ttf</key>
-		<data>
-		/AXeMSNOAJD33cKM4bI69AJssdo=
-		</data>
-		<key>Octicons.ttf</key>
-		<data>
-		V638uJF0TM1S1Su6eeGRGAEQSKU=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -235,125 +216,74 @@
 		</data>
 		<key>PlugIns/CustomComponentTests.xctest/CustomComponentTests</key>
 		<data>
-		OyCXqAuhtAKan25U6WE2WNW/Df0=
+		Lu6BIiQUiPmSXbpqvnC4J8sHm2g=
 		</data>
 		<key>PlugIns/CustomComponentTests.xctest/Info.plist</key>
 		<data>
-		tGqeX0dVdYCcB+NZOsK2a+j0KeU=
-		</data>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeDirectory</key>
-		<data>
-		0Mi01DFyrZKQayFwFDEn+R1LMtA=
-		</data>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeRequirements</key>
-		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
-		</data>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeRequirements-1</key>
-		<data>
-		gHcsTaVvMj08oLoKuRTWNCKncAI=
+		hZsmliCjWAkDRosRo0qVbpOtvzg=
 		</data>
 		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		2pOPXMEfw0c5UCS+ShyHfAxKU60=
-		</data>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeSignature</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
-		<key>Zocial.ttf</key>
-		<data>
-		C9pZx7zT05J94EfgkYdaRCi/0as=
+		Odkbbg7zrns2zTZbK6X/U5jdzoA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Entypo.ttf</key>
+		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			R4cKZ91Qhxdl95nKqX2ochnuR8U=
+			89YBlg4A+8zT4BYHEU3e6W1TaPk=
 			</data>
 			<key>hash2</key>
 			<data>
-			3QhJoVkfiNp5N7I/kiQYpc7FTgdeCePMyo/rYgFvqoI=
+			KvZQpAHMNf9iEV9xXpvJngZDgkQUQ/m1gKsrRFOIxjI=
 			</data>
-		</dict>
-		<key>EvilIcons.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			QZrcvnS7qREj2zspB3XjYvIS8+U=
-			</data>
-			<key>hash2</key>
-			<data>
-			J9GohnZmGjoiaVdpUtb3ANoFZEvAMFUR3iO3D3HKVDY=
-			</data>
-		</dict>
-		<key>FontAwesome.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			YdjZZ4B+8SWY2BWC+pW59gDD7gE=
-			</data>
-			<key>hash2</key>
-			<data>
-			rhni5MBPKwS/AwaExMHbj69cj+PuA9HgxAkEZgiziRI=
-			</data>
-		</dict>
-		<key>Foundation.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SyvObHkkk6SlcWtv7C2+/olJLD8=
-			</data>
-			<key>hash2</key>
-			<data>
-			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
-			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3kP1Ki+b+w3pEUBaztwELW5jb2Q=
+			aUm0c1LLvF5BD7IVSBsGgwX3iyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			UE7aA/WkBOi/SdWYuUddE5uo41CZ4TyRm44okC9hrdE=
+			7PseoUdqaoz5T0phqPHghfCEI/rW0AtlwjH9N4FhxCI=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/Y0bIJ33xXJIw7w6ZvW1julgwac=
+			jVuquTxW/zgsDhVvtjnDjaLklQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			N0iG/VuNRoBYkVnZOCmThFEyA4gBVRbzSlD1z8jYthI=
+			L+jx47k28FcyjR4haujIk5s3NUw8KJmGPAFMDJMh2fg=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JvamJFem0IBXshxdUOCNSE0NNkI=
+			NdDKugDSZik31UagIY7DLixLXo0=
 			</data>
 			<key>hash2</key>
 			<data>
-			zC7tMtzzAfQJPfGW/Zt8bD1D/QrpnWMPozEqjctDlF0=
+			B+DqcthsK6GElIVyJi966r/H1MSU4UJDIER8Ye6ezDo=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ANv/khqWESPV0lU5ItOnXBRevbM=
+			oJil3U1d5lvNs+UAiDae04BI/2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			6bhsKTya6H6e+smw3uebHl1XOz5QCJPMkillQqzSdRQ=
+			gYjYT2HBXfrAq8c53hSUU6hYYEsGvu1N0ekCfZGuHVQ=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Headers/XCAbstractTest.h</key>
@@ -569,11 +499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rWeryK2BMCp9F3/mp9BKm7kg/1Q=
+			h93xArf56RHLG0oQUpJsVrR2esg=
 			</data>
 			<key>hash2</key>
 			<data>
-			nUiZ2Tur0bUvr5aMb4C8rjGb93zvhtTZJCMSZxHXjKc=
+			oibAqFtmvtT9DEPu7JKu3yNnUfPMBj2p6ovn4KFLJvM=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Headers/XCUIDevice.h</key>
@@ -591,11 +521,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uzgoVBBig+CJOMv+jyGE6Ou4lx0=
+			lCooSq4totv00z9Cpjsf3qZk1fw=
 			</data>
 			<key>hash2</key>
 			<data>
-			9QxRETFinr/XJVF9/35Kukn15838D8MU72tFSQ8FMsw=
+			kpGA2t+iNPNUgdNvWDhJKYpnjGrFnz7TfLClD7keUOE=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Headers/XCUIElementAttributes.h</key>
@@ -624,22 +554,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DEWr4Nmwz7JAy6EydZYQIYgpTlE=
+			hRIiU4QCL7DtuacVXjl7A5M0MNo=
 			</data>
 			<key>hash2</key>
 			<data>
-			cbOnohF7eJyBVdhyKusSvWWBk4aKBh19HfZgfKFaVHE=
+			wtanM5zkXeuD4AshTod0q96Oi2b9wfE0EDq6Yej9YCU=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Headers/XCUIElementTypes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KfkqELrdD/Tb6UOCWX6a7rizJmE=
+			U3yZ50UN++NXOpSMIy49comcTwc=
 			</data>
 			<key>hash2</key>
 			<data>
-			7j1y+g8wo73vbn8tycgUCS4eC0reDvc610S59wmdbQM=
+			KCKlZoWtuH/QDe2lXFa9TZDfKpnLZOM4azQpAsLTb4M=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h</key>
@@ -668,11 +598,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o+6HjeXHIRU2pTtYGPfLcQ6ewRg=
+			zUEJesmFI6/+tEAh5MVteZyrRHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			HMLIMreZ5fD5GIFngYLEZr7Eln31bm/cgrzECEaORXc=
+			oLBoEAPCBaPEwG/iMmxRhVFZ2aPfbPsWyhPCjU4KZJQ=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Modules/module.modulemap</key>
@@ -690,22 +620,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RHXSWYnDetHKL50HLNwIgcxIwd8=
+			a88XIbyyK4c/LWXFfuMspfqry7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			RfOHN5ApwfFKQ0kOGy+D2jFbhte2JrxJG0XuiajQofk=
+			MBD5ESSJZQT8SOz38Gjm3TBNd5TSyT7+Y+vzNdKvBNM=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SuG8biVyYepPfL6D7yYEC2CTw2M=
+			t9uj1OstrX62LTg72x/llY1Hf+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			5eZwlGmIDpMwY0x+/6fkDYg2sPY6n+5KWUPTZiRm6Os=
+			lS4YO9I5WErNn98EIRqCwkHqQH2ZG15X+xrN5vONV/Q=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XCTest.tbd</key>
@@ -717,99 +647,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			daPcUHeI7smI+bfNH/gYfd2XsCw=
+			kyL3MKt/Hh8S9COPUG40xFkWaoQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			PaEIdZAZBbfozgKKm3WdLGgiV3PpmPgEXsV6k80eMdY=
+			AcJtJO3H1uMnojVTNC0ieEmmgNRVagi1Vn4Y/ZIlneE=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/XCUIRecorderService</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nRgHY0yfSkh+Rsgag2hvfV9HRVU=
+			FTrFhh0TgN5L8ZN5V3a8cErMdnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			kRiRG4c63aohQLN+zWj+Qoj6HqBN0E1+K3L4ckWI1bg=
+			u2rl2Sdw3KxcthapQ2ZUhCTxvfvLvYts2n8xM5z19nI=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MfcuT2iwFIPWAvNoShXgpSYyxn0=
+			NULa62Q9Ekagp5J6vYhXotN9g8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			VZPrd2jC+htja3wx67k3JocJN1H6dqcalpbPl6MCI5U=
+			zqK5vZ7A5YLy9UJf36dSe9269QaLTTanbEJSszvJdLQ=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/XCUIRecorderService.xpc/version.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6nbxw2NOojRpBQBLYqyQ0AtTz9Q=
+			R/va6aDhjzoXMhgC4CJPpstvJEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bd7fIGtyVUoXiBmgAv7xzarDo99SQYHjkubX9NCPYX4=
+			jimjd+OEzTXDFTB4mFp8BykGyE7Sc3pVgOXwLlSvD+U=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			89+xmnpwc51/kL9aWeisnKZ8Znw=
+			i1ilUYSCt6kbw9IUS/EVTKdd4Dg=
 			</data>
 			<key>hash2</key>
 			<data>
-			sDIUam9sJozExHDKsaZWGOVQ0MMwLzEIVDZZ/tdI4z4=
+			avU9pmX0QEFLL3rbH5YXMf0oxIKjfqeqKVDx7h8LNRE=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hiVUAijYQPVQpb+mOEOKzyxTBsY=
+			BktQ1TcUZ2SPLbuBj29VfoZRncc=
 			</data>
 			<key>hash2</key>
 			<data>
-			6RLBIdCPsidpELkgc4xY7Nq9RvvkbREsE5J6IxduIXA=
+			s63ti1qbEX06nsZ4R2y5VH2H8JtTzSFoOGevEmZ54VQ=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/version.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6nbxw2NOojRpBQBLYqyQ0AtTz9Q=
+			R/va6aDhjzoXMhgC4CJPpstvJEw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bd7fIGtyVUoXiBmgAv7xzarDo99SQYHjkubX9NCPYX4=
+			jimjd+OEzTXDFTB4mFp8BykGyE7Sc3pVgOXwLlSvD+U=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XPCServices/xctestSymbolicator.xpc/xctestSymbolicator</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4P97BUzWBX1rxzp6PbF0u5ztZww=
+			UtWzzDx9xpDYmZ+MGvYZEdPL8Nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ASj3shJGX6j1YJ+/wsH9y1Io8wq2WxBfBQI2UBpGFeU=
+			ry95oH8G0N80YChrlplxhhj+bJfqTgMakVDJzqWDd9U=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Fm/OuS34FElDdS/yIzfDiggzzgQ=
+			udvTC+ZuRS0sZMsV7q9HYTPdYWQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			zzsQjEwHKlbYBiz2pxUbcS9faLtosBuqkAfkP9GaxL0=
+			s7DtnuhuCnigQgi3C5KtnP2GR6FktTWiEmoVahnNAUQ=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
@@ -829,11 +759,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NC0s8Ltayn5g2lVdYHthxSDTX7s=
+			yjBcTcl/az9WjdyHWVRj7ess7M4=
 			</data>
 			<key>hash2</key>
 			<data>
-			CUrPV/VNMFpO3wbwlMUPCwEhMGaZEr//4XDra/fxIdA=
+			pdgABt46mNG+DAW8NzprEAuv+un0qUW4r4xQcIHJA0M=
 			</data>
 		</dict>
 		<key>Ionicons.ttf</key>
@@ -847,114 +777,37 @@
 			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
 			</data>
 		</dict>
-		<key>MaterialIcons.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/AXeMSNOAJD33cKM4bI69AJssdo=
-			</data>
-			<key>hash2</key>
-			<data>
-			t/Sjq1YgSPKN0fppFgG8QzY6YdD4dtFtgxbFLk8y1pY=
-			</data>
-		</dict>
-		<key>Octicons.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			V638uJF0TM1S1Su6eeGRGAEQSKU=
-			</data>
-			<key>hash2</key>
-			<data>
-			T7ZVEVQspFqn75Lpop5J0vbtbVMwigVJyBib3WighTo=
-			</data>
-		</dict>
 		<key>PlugIns/CustomComponentTests.xctest/CustomComponentTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OyCXqAuhtAKan25U6WE2WNW/Df0=
+			Lu6BIiQUiPmSXbpqvnC4J8sHm2g=
 			</data>
 			<key>hash2</key>
 			<data>
-			VWRhbJ6p2+T0rpBLbCkj7rzbyYWw49LiAV+SUNdHQ6c=
+			DCFOaDBnlONUoVFpBl0oI/wKHtzHjfOzPKXoQfmKn9U=
 			</data>
 		</dict>
 		<key>PlugIns/CustomComponentTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tGqeX0dVdYCcB+NZOsK2a+j0KeU=
+			hZsmliCjWAkDRosRo0qVbpOtvzg=
 			</data>
 			<key>hash2</key>
 			<data>
-			sSH1ohu3prSqKpyuncfSX/xOUQuebOLf3K6dsrZ9fZo=
-			</data>
-		</dict>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeDirectory</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0Mi01DFyrZKQayFwFDEn+R1LMtA=
-			</data>
-			<key>hash2</key>
-			<data>
-			6DKKQ4dSNZYlWNMEZXmIiHH3bBb8PQBjCy+5623VGHI=
-			</data>
-		</dict>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeRequirements</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OnX22wWFKRSOFN1+obRynMCeyXM=
-			</data>
-			<key>hash2</key>
-			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
-			</data>
-		</dict>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeRequirements-1</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			gHcsTaVvMj08oLoKuRTWNCKncAI=
-			</data>
-			<key>hash2</key>
-			<data>
-			BpJhiU43jOr9F4ao5oDhT/jkHQIFHVJSbEqrqMMhSuM=
+			ez4ERB1K4jnik0Ew7FCXGuD93KQgGH3BTz5NI++WQ7Y=
 			</data>
 		</dict>
 		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2pOPXMEfw0c5UCS+ShyHfAxKU60=
+			Odkbbg7zrns2zTZbK6X/U5jdzoA=
 			</data>
 			<key>hash2</key>
 			<data>
-			+mI/KlrQxC6p7sL0al0gqLRpWT9Zsxzr+U4rrccXVB8=
-			</data>
-		</dict>
-		<key>PlugIns/CustomComponentTests.xctest/_CodeSignature/CodeSignature</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
-			</data>
-		</dict>
-		<key>Zocial.ttf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			C9pZx7zT05J94EfgkYdaRCi/0as=
-			</data>
-			<key>hash2</key>
-			<data>
-			17EKHr4YMOWi8I9JA7moDiwZEsDdL3O5P88r+DIhZgI=
+			3mks/r6C5sRgj6VkiiBFaym7GIFAq4Jff7EzgyhUgMQ=
 			</data>
 		</dict>
 	</dict>

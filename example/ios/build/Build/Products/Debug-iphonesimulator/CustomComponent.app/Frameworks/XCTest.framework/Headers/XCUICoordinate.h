@@ -34,21 +34,44 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
 /*! Creates a new coordinate with an absolute offset in points from the original coordinate. */
 - (XCUICoordinate *)coordinateWithOffset:(CGVector)offsetVector;
 
+@end
+
 #if TARGET_OS_IPHONE
+
+@interface XCUICoordinate (XCUICoordinateTouchEvents)
+
 - (void)tap;
 - (void)doubleTap;
 - (void)pressForDuration:(NSTimeInterval)duration;
 - (void)pressForDuration:(NSTimeInterval)duration thenDragToCoordinate:(XCUICoordinate *)otherCoordinate;
-#else
+
+@end
+
+#endif // TARGET_OS_IPHONE
+
+#if TARGET_OS_OSX
+
+@interface XCUICoordinate (XCUICoordinateMouseEvents)
+
 - (void)hover;
 - (void)click;
 - (void)doubleClick;
 - (void)rightClick;
 - (void)clickForDuration:(NSTimeInterval)duration thenDragToCoordinate:(XCUICoordinate *)otherCoordinate;
 - (void)scrollByDeltaX:(CGFloat)deltaX deltaY:(CGFloat)deltaY;
-#endif
 
 @end
+
+@interface XCUICoordinate (XCUICoordinateTouchBarEvents)
+
+- (void)tap;
+- (void)doubleTap;
+- (void)pressForDuration:(NSTimeInterval)duration;
+- (void)pressForDuration:(NSTimeInterval)duration thenDragToCoordinate:(XCUICoordinate *)otherCoordinate;
+
+@end
+
+#endif // TARGET_OS_OSX
 
 #endif
 

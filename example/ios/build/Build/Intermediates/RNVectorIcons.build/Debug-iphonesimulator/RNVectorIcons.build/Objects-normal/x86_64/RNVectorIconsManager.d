@@ -1,20 +1,21 @@
 dependencies: \
-  /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.m \
-  /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.h \
-  ../react-native/React/Base/RCTBridgeModule.h \
-  ../react-native/React/Base/RCTDefines.h \
-  ../react-native/React/Base/RCTLog.h \
-  ../react-native/React/Base/RCTAssert.h \
-  ../react-native/React/Base/RCTConvert.h \
-  ../react-native/React/CSSLayout/CSSLayout.h \
-  ../react-native/React/CSSLayout/CSSMacros.h \
-  ../react-native/React/Views/RCTAnimationType.h \
-  ../react-native/React/Views/RCTBorderStyle.h \
-  ../react-native/React/Views/RCTTextDecorationLineType.h \
-  ../react-native/React/Views/RCTPointerEvents.h \
-  ../react-native/React/Base/RCTBridge.h \
-  ../react-native/React/Base/RCTBridgeDelegate.h \
-  ../react-native/React/Base/RCTJavaScriptLoader.h \
-  ../react-native/React/Base/RCTFrameUpdate.h \
-  ../react-native/React/Base/RCTInvalidating.h \
-  ../react-native/React/Base/RCTUtils.h
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.m \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/node_modules/react-native-vector-icons/RNVectorIconsManager/RNVectorIconsManager.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h

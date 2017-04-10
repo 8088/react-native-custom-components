@@ -44,7 +44,8 @@ export default class ToggleButton extends PureComponent {
             if(!props.children || props.children.length!==2) throw 'ToggleButton need two Button children!';
             if(props.children[0].props.elementType!=='Button') throw 'ToggleButton children[0] must be Button type!';
             if(props.children[1].props.elementType!=='Button') throw 'ToggleButton children[1] must be Button type!';
-        }catch (err){
+        }
+        catch (err){
             this.has_error = true;
             throw err;
         }

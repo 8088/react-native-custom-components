@@ -1,6 +1,6 @@
 {
   "name": "react-native-custom-components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React Native custom components for iOS + Android",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,7 @@
     "react-native ui",
     "react-native component",
     "react-native button",
+    "react-native stepper",
     "react-native toggle button",
     "react-native html",
     "react-native editor",
@@ -28,8 +29,7 @@
   },
   "homepage": "https://github.com/8088/react-native-custom-components#readme",
   "dependencies": {
-    "react-native-keyboardevents": "^0.4.5",
-    "react-native-vector-icons": "^2.1.0",
+    "react-native-vector-icons": "^4.0.1",
     "react-static-container": "^1.0.1"
   }
 }

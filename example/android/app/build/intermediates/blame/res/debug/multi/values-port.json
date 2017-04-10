@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/liujunli/work/www/8088_GITHUB/react-native-custom-components/example/android/app/build/intermediates/res/merged/debug/values-port/values-port.xml",
+        "outputFile": "/Users/liujunli/work/www/2017/react-native/labs/CustomComponent/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
         "map": [
             {
                 "to": {
@@ -11,31 +11,7 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "/Users/liujunli/work/www/8088_GITHUB/react-native-custom-components/example/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-port/values-port.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 280,
-                        "endColumn": 55,
-                        "endOffset": 331
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/res/merged/debug/values-port/values-port.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 55,
-                    "endOffset": 106
-                },
-                "from": {
-                    "file": "/Users/liujunli/work/www/2016/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-port/values-port.xml",
+                    "file": "/Users/liujunli/work/www/2017/react-native/labs/CustomComponent/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/res/values-port/values-port.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

@@ -104,7 +104,7 @@ export default class SlideBox extends Component {
         threshold: 25,
         flipCallback: () => {},
         dotColor: 'white',
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 2.5,
         dotBottom: 15,
     };

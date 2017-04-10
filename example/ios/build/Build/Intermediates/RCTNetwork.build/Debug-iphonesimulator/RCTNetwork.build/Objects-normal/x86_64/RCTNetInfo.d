@@ -1,9 +1,13 @@
 dependencies: \
-  /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTNetInfo.m \
-  /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTNetInfo.h \
-  ../../React/Modules/RCTEventEmitter.h ../../React/Base/RCTBridge.h \
-  ../../React/Base/RCTBridgeDelegate.h \
-  ../../React/Base/RCTJavaScriptLoader.h \
-  ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTDefines.h \
-  ../../React/Base/RCTFrameUpdate.h ../../React/Base/RCTInvalidating.h \
-  ../../React/Base/RCTAssert.h ../../React/Base/RCTEventDispatcher.h
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTNetInfo.m \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTNetInfo.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h

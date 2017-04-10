@@ -9,36 +9,38 @@ import {
     View,
     Text,
     Image,
+    TextInput,
     StatusBar,
     ScrollView,
     StyleSheet,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-
+import {       
+    Button,
+    ToggleButton,
+    Stepper,
+    HtmlView,
+    InputEditor,
+    SlideBox,
+    ScrollBox,
+    Tabbar,
+    Tabbody,
+} from 'react-native-custom-components';
 import Network from './mixins/Network';
-
-import Button from './components/Button';
-import ToggleButton from './components/ToggleButton';
-import HtmlView from './components/HtmlView';
-import InputEditor from './components/InputEditor';
-import SlideBox from './components/SlideBox';
-import ScrollBox from './components/ScrollBox';
-import Tabbar from './components/Tabbar';
-import Tabbody from './components/Tabbody';
-import DropdownRefresh from './components/DropdownScrollView';
+import Colors from './assets/Colors';
 
 import Topbar from './modules/Topbar';
 import Module from './modules/Module';
 
 const HTML = `
-<img src="http://img.mp.itc.cn/upload/20160922/f6729f9c3b15436cac418a02c01bba2b_th.jpeg">
-<p><span style="font-size: 14px; color:#f60;">2016年9月20日，美国纽约，美国总统奥巴马出席第71届联合国大会。图片来源：视觉中国</span></p>
+<img src="http://www.gov.cn/xinwen/2017-04/09/5184425/images/8ee5a0cf03634e65bcc118fcdb7ac5c8.jpg">
+<p><span style="font-size: 14px; color:#f60;">4月7日下午，李克强在会见挪威首相之前特意安排近半小时时间，会见来华对上海申办2021年第46届世界技能大赛进行考察评估的世界技能组织主席巴特利等两人</span></p>
 `;
 
 const HTML2 = `
-<p><b style="font-size: 16px; color:#666;">美国总统奥巴马出席第71届联合国大会</b></p>
+<p><b style="font-size: 16px; color:#666;">奥巴马出席第71届联合国大会</b></p>
 <img style="margin-top:5px;" src="http://img.mp.itc.cn/upload/20160922/f6729f9c3b15436cac418a02c01bba2b_th.jpeg">
-<p><span style="font-size: 14px; color:#666;">2016年9月20日，美国纽约，美国总统奥巴马出席第71届联合国大会。图片来源：视觉中国</span></p>
+<p><span style="font-size: 14px; color:#666;">2016年9月20日，美国纽约，美国总统奥巴马出席第71届联合国大会。</span></p>
 `;
 
 export default class App extends Component {
@@ -49,7 +51,7 @@ export default class App extends Component {
                 {id:0, name:'标签页'},
                 {id:1, name:'TestTest2'},
                 {id:2, name:'Test3'},
-                {id:3, name:'TabName4'},
+                {id:3, name:'Tab4'},
                 {id:4, name:'TabName5'},
                 {id:5, name:'TabName6'},
                 {id:6, name:'TabName7'},
@@ -57,6 +59,8 @@ export default class App extends Component {
             activeTab: 0,
             scrollValue:null,
             htmlText:HTML,
+            counter: 8,
+            counter2: 0,
         };
     }
 
@@ -77,24 +81,26 @@ export default class App extends Component {
             tabs,
             scrollValue,
             htmlText,
+            counter,
+            counter2,
         }=this.state;
 
         return (
             <View style={styles.container}>
-                <StatusBar backgroundColor='rgba(255,255,255,0.1)' hidden={false} animated={true} translucent={true} barStyle='default'/>
+                <StatusBar backgroundColor='rgba(0,0,0,0.1)' hidden={false} animated={true} translucent={true} barStyle='dark-content'/>
                 <Topbar title='自定义组件'/>
                 <ScrollView style={styles.flex_1}>
                     <Module title='焦点图轮播'>
-                        <View style={{flex:1, height:150, backgroundColor:'#999'}}>
+                        <View style={{flex:1, height:160, backgroundColor:'#999'}}>
                             <ScrollBox dotColor={'#FE7A93'}>
                                 <View style={styles.flex_1}>
-                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
+                                    <Image style={styles.flex_1} source={{uri: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491835031146&di=ff5b484b5a74aca015da29f2a7d71733&imgtype=0&src=http%3A%2F%2Fa4.att.hudong.com%2F38%2F47%2F19300001391844134804474917734_950.png'}}/>
                                 </View>
                                 <View style={styles.flex_1}>
-                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
+                                    <Image style={styles.flex_1} source={{uri: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491835072917&di=69b4edee69e843bea7d8c3ee579dc71c&imgtype=0&src=http%3A%2F%2Ftupian.enterdesk.com%2F2012%2F0423%2F74%2F4.jpg'}}/>
                                 </View>
                                 <View style={styles.flex_1}>
-                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
+                                    <Image style={styles.flex_1} source={{uri: 'https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1491825057&di=0aa696c270447276cefe85cd8e4a55b9&src=http://desk.fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/03/ChMkJlbKxvOIH6XEAA77F_zYBP8AALHswG2SeoADvsv762.jpg'}}/>
                                 </View>
                             </ScrollBox>
                         </View>
@@ -128,21 +134,6 @@ export default class App extends Component {
                         </View>
                     </View>
 
-                    <Module title='滑动容器'>
-                        <View style={{flex:1, height:150, backgroundColor:'#999'}}>
-                            <SlideBox>
-                                <View style={styles.flex_1}>
-                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
-                                </View>
-                                <View style={styles.flex_1}>
-                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
-                                </View>
-                                <View style={styles.flex_1}>
-                                    <Image style={styles.flex_1} source={{uri: 'https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?h=1024'}}/>
-                                </View>
-                            </SlideBox>
-                        </View>
-                    </Module>
                     <View style={styles.module}>
                         <View style={[styles.module_head, styles.flex_row, {justifyContent:'space-between',alignItems:'center', paddingHorizontal:15, paddingVertical:5,}]}>
                             <Text style={styles.module_head_text}>自适应HTML内容高度显示控件</Text>
@@ -186,11 +177,11 @@ export default class App extends Component {
                     <Module title='切换控件'>
                         <View style={[styles.flex_row, styles.flex_wrap, styles.margin_bottom_10]}>
                             <ToggleButton onPress={this._onToggle} disabled={false} checked={false}>
-                                <Button style={styles.btn_default} elementId={'btnA'} renderDisabled={this._renderDisBtn.bind(this, '切换按钮A')} >
-                                    <Text style={[styles.color_deep,styles.font_size_14]}>切换按钮A</Text>
+                                <Button style={styles.btn_default} elementId={'btnA'} renderDisabled={this._renderDisBtn.bind(this, '状态一')} >
+                                    <Text style={[styles.color_deep,styles.font_size_14]}>状态一</Text>
                                 </Button>
-                                <Button style={styles.btn_default} elementId={'btnB'} renderDisabled={this._renderDisBtn.bind(this, '切换按钮B')} >
-                                    <Text style={[styles.color_deep,styles.font_size_14]}>切换按钮B</Text>
+                                <Button style={styles.btn_default} elementId={'btnB'} renderDisabled={this._renderDisBtn.bind(this, '状态二')} >
+                                    <Text style={[styles.color_deep,styles.font_size_14]}>状态二</Text>
                                 </Button>
                             </ToggleButton>
                             <ToggleButton disabled={true} checked={false} style={styles.margin_left_10}>
@@ -202,37 +193,37 @@ export default class App extends Component {
                                 </Button>
                             </ToggleButton>
                             <ToggleButton disabled={true} checked={true} style={styles.margin_left_10}>
-                                <Button style={styles.btn_default} elementId={'btnA'} renderDisabled={this._renderDisBtn.bind(this, '切换按钮A')} >
-                                    <Text style={[styles.color_deep,styles.font_size_14]}>切换按钮A</Text>
+                                <Button style={styles.btn_default} elementId={'btnA'} renderDisabled={this._renderDisBtn.bind(this, '状态一')} >
+                                    <Text style={[styles.color_deep,styles.font_size_14]}>状态一</Text>
                                 </Button>
-                                <Button style={styles.btn_default} elementId={'btnB'} renderDisabled={this._renderDisBtn.bind(this, '切换按钮B')} >
-                                    <Text style={[styles.color_deep,styles.font_size_14]}>切换按钮B</Text>
+                                <Button style={styles.btn_default} elementId={'btnB'} renderDisabled={this._renderDisBtn.bind(this, '状态二')} >
+                                    <Text style={[styles.color_deep,styles.font_size_14]}>状态二</Text>
                                 </Button>
                             </ToggleButton>
                         </View>
                         <View style={[styles.flex_row, styles.flex_wrap, styles.align_center, styles.margin_bottom_10]}>
                             <ToggleButton disabled={true} checked={true}>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
-                                    <Icon style={[styles.margin_right_5, {width:16}]}  name='ios-stopwatch-outline' size={20} color='#FE7A93'/>
+                                    <Icon style={[styles.margin_right_5, {width:13}]}  name='ios-stopwatch-outline' size={16} color='#FE7A93'/>
                                     <Text style={[styles.font_size_14, styles.color_pink]}>提醒我</Text>
                                 </Button>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
-                                    <Icon style={styles.margin_right_5}  name='ios-timer-outline' size={20} color='#ccc'/>
+                                    <Icon style={styles.margin_right_5}  name='ios-timer-outline' size={16} color='#ccc'/>
                                     <Text style={[styles.font_size_14, styles.color_gray]}>已预约</Text>
                                 </Button>
                             </ToggleButton>
                             <ToggleButton disabled={false} checked={false} style={styles.margin_left_10}>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
-                                    <Icon style={[styles.margin_right_5, {width:16}]}  name='ios-stopwatch-outline' size={20} color='#FE7A93'/>
+                                    <Icon style={[styles.margin_right_5, {width:13}]}  name='ios-stopwatch-outline' size={16} color='#FE7A93'/>
                                     <Text style={[styles.font_size_14, styles.color_pink]}>提醒我</Text>
                                 </Button>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
-                                    <Icon style={styles.margin_right_5}  name='ios-timer-outline' size={20} color='#FE7A93'/>
+                                    <Icon style={styles.margin_right_5}  name='ios-timer-outline' size={16} color='#FE7A93'/>
                                     <Text style={[styles.font_size_14, styles.color_pink]}>已预约</Text>
                                 </Button>
                             </ToggleButton>
 
-                            <ToggleButton onPress={this._onSwitch} disabled={false} checked={false} style={styles.margin_left_10}>
+                            <ToggleButton onPress={this._onSwitch} disabled={false} checked={true} style={styles.margin_left_10}>
                                 <Button style={styles.btn_switch_off}>
                                     <View style={styles.btn_switch_icon}/>
                                     <Text style={styles.btn_switch_text}>关</Text>
@@ -243,21 +234,11 @@ export default class App extends Component {
                                 </Button>
                             </ToggleButton>
 
-                            <ToggleButton onPress={this._onSwitch1} disabled={false} checked={true} style={styles.margin_left_10}>
-                                <Button style={styles.btn_switch_off}>
-                                    <View style={styles.btn_switch_icon}/>
-                                    <Text style={styles.btn_switch_text}>关</Text>
-                                </Button>
-                                <Button style={styles.btn_switch_on}>
-                                    <Text style={styles.btn_switch_text}>开</Text>
-                                    <View style={styles.btn_switch_icon}/>
-                                </Button>
-                            </ToggleButton>
                         </View>
                         <View style={[styles.flex_row, styles.flex_wrap]}>
                             <ToggleButton disabled={false} checked={false}>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
-                                    <Icon style={styles.margin_right_5}  name='ios-add' size={18} color='#FE7A93'/>
+                                    <Icon style={styles.margin_right_5}  name='ios-add' size={13} color='#FE7A93'/>
                                     <Text style={[styles.font_size_14, styles.color_pink]}>关注</Text>
                                 </Button>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
@@ -266,7 +247,7 @@ export default class App extends Component {
                             </ToggleButton>
                             <ToggleButton disabled={true} checked={true} style={styles.margin_left_10}>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
-                                    <Icon style={styles.margin_right_5}  name='ios-add' size={18} color='#FE7A93'/>
+                                    <Icon style={styles.margin_right_5}  name='ios-add' size={13} color='#FE7A93'/>
                                     <Text style={[styles.font_size_14, styles.color_pink]}>关注</Text>
                                 </Button>
                                 <Button style={[styles.btn_default, styles.flex_row]} renderDisabled={this._renderDisBtn.bind(this, '已关注')} >
@@ -275,7 +256,7 @@ export default class App extends Component {
                             </ToggleButton>
                             <ToggleButton onPress={this._onToggle1} disabled={false} checked={false} style={styles.margin_left_10}>
                                 <Button style={[styles.btn_default, styles.flex_row]}>
-                                    <Icon style={styles.margin_right_5}  name='ios-add' size={18} color='#FE7A93'/>
+                                    <Icon style={styles.margin_right_5}  name='ios-add' size={13} color='#FE7A93'/>
                                     <Text style={[styles.font_size_14, styles.color_pink]}>关注</Text>
                                 </Button>
                                 <Button style={[styles.btn_default, styles.flex_row]} renderDisabled={this._renderDisBtn.bind(this, '已关注')} >
@@ -284,6 +265,56 @@ export default class App extends Component {
                             </ToggleButton>
                         </View>
                     </Module>
+                    <Module title='计数器控件'>
+                        <View style={[styles.flex_row, styles.align_center, styles.flex_wrap, styles.margin_bottom_10]}>
+                            <Stepper disabled={false} maxValue={10} minValue={0} style={styles.stepper} onChanged={this._onChanged}>
+                                <Button style={[styles.stepper_btn, styles.left_btn]} renderDisabled={()=>{
+                                    return (
+                                        <View style={[styles.stepper_btn_disabled, styles.left_btn]}>
+                                            <Icon name='ios-remove' size={24} color={Colors.gray}/>
+                                        </View>
+                                    );
+                                }}>
+                                    <Icon name='ios-remove' size={24} color={Colors.pink}/>
+                                </Button>
+                                <TextInput style={styles.stepper_input} value={counter.toString()} />
+                                <Button style={[styles.stepper_btn, styles.right_btn]} renderDisabled={()=>{
+                                    return (
+                                        <View style={[styles.stepper_btn_disabled, styles.right_btn]}>
+                                            <Icon name='ios-add' size={24} color={Colors.gray}/>
+                                        </View>
+                                    );
+                                }}>
+                                    <Icon name='ios-add' size={24} color={Colors.pink}/>
+                                </Button>
+                            </Stepper>
+                            <Button onPress={this._getValue} style={[styles.btn_default, styles.margin_left_5]} elementId={'btn1'} >
+                                <Text style={[styles.color_deep,styles.font_size_14]}>Get Counter</Text>
+                            </Button>
+                            <Text style={[styles.stepper_txt]}>{counter2.toString()}</Text>
+                            <Stepper disabled={false} initValue={0} maxValue={9999} minValue={0} style={styles.stepper} onChanged={this._onChanged2}>
+                                <Button style={[styles.stepper_btn, styles.left_btn, ]} renderDisabled={()=>{
+                                    return (
+                                        <View style={[styles.stepper_btn_disabled, styles.left_btn]}>
+                                            <Icon name='ios-remove' size={24} color={Colors.gray}/>
+                                        </View>
+                                    );
+                                }}>
+                                    <Icon name='ios-remove' size={24} color={Colors.pink}/>
+                                </Button>
+                                <Button style={[styles.stepper_btn, styles.right_btn]} renderDisabled={()=>{
+                                    return (
+                                        <View style={[styles.stepper_btn_disabled, styles.right_btn]}>
+                                            <Icon name='ios-add' size={24} color={Colors.gray}/>
+                                        </View>
+                                    );
+                                }}>
+                                    <Icon name='ios-add' size={24} color={Colors.pink}/>
+                                </Button>
+                            </Stepper>
+                        </View>
+                    </Module>
+
                     <Module title='单选控件'>
                         <Text style={styles.color_gray}>TODO: 多个切换控件相关联 组成单选控件</Text>
                     </Module>
@@ -311,6 +342,26 @@ export default class App extends Component {
                 <InputEditor ref='editor' callback={this._onSubmit} placeholder={'编辑器预览文字..'} submitButtonText={'发表'} />
             </View>
         );
+    }
+
+    _onChanged=(value)=>{
+        try {
+            this.setState({counter:parseInt(value)});
+        } catch (err) {
+            //..
+        }
+    }
+
+    _getValue=()=>{
+        alert(this.state.counter)
+    }
+
+    _onChanged2=(value)=>{
+        try {
+            this.setState({counter2:parseInt(value)});
+        } catch (err) {
+            //..
+        }
     }
 
     _toggleTab = (index)=> {
@@ -422,7 +473,7 @@ export default class App extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f4f4f4',
+        backgroundColor: '#eee',
     },
 
 
@@ -480,6 +531,59 @@ const styles = StyleSheet.create({
         fontSize: 12,
         paddingBottom: .5,
     },
+
+
+    //stepper
+    stepper:{
+        borderRadius: 5,
+        borderWidth: 1,
+        borderColor: '#FFB8C6',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        alignSelf:'flex-start',
+        flexDirection: 'row',
+        backgroundColor: '#fff',
+    },
+    stepper_btn:{
+        borderRadius: 3,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#FFF1F2',
+        paddingHorizontal: 8,
+        paddingTop:1,
+    },
+    stepper_btn_disabled:{
+        borderRadius: 3,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#FFF7F8',
+        paddingHorizontal: 8,
+        paddingTop:1,
+    },
+    left_btn:{
+        borderBottomRightRadius:0,
+        borderTopRightRadius:0,
+    },
+    right_btn:{
+        borderBottomLeftRadius:0,
+        borderTopLeftRadius:0,
+    },
+    stepper_txt:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex:1,
+        textAlign:'center',
+        color: '#777',
+        fontSize: 20,
+    },
+    stepper_input:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: 30,
+        textAlign:'center',
+        color: '#777',
+    },
+
 
     text_input: {
         borderRadius: 3,

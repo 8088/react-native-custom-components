@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol XCUIElementTypeQueryProvider
 
+@property (readonly, copy) XCUIElementQuery *touchBars;
 @property (readonly, copy) XCUIElementQuery *groups;
 @property (readonly, copy) XCUIElementQuery *windows;
 @property (readonly, copy) XCUIElementQuery *sheets;

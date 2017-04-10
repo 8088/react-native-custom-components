@@ -76,7 +76,7 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
  * Events that can be synthesized relative to an XCUIElement object. When an event API is called, the element
  * will be resolved. If zero or multiple matches are found, an error will be raised.
  */
-@interface XCUIElement (XCUIElementEventSynthesis)
+@interface XCUIElement (XCUIElementKeyboardEvents)
 
 /*!
  * Types a string into the element. The element or a descendant must have keyboard focus; otherwise an
@@ -87,8 +87,30 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
  */
 - (void)typeText:(NSString *)text;
 
-#if TARGET_OS_TV
-#elif TARGET_OS_IOS
+#if TARGET_OS_OSX
+
+/*!
+ * Hold modifier keys while the given block runs. This method pushes and pops the modifiers as global state
+ * without need for reference to a particular element. Inside the block, elements can be clicked on, dragged
+ * from, typed into, etc.
+ */
++ (void)performWithKeyModifiers:(XCUIKeyModifierFlags)flags block:(void (^)(void))block;
+
+/*!
+ * Types a single key with the specified modifier flags. Although `key` is a string, it must represent
+ * a single key on a physical keyboard; strings that resolve to multiple keys will raise an error at runtime.
+ * In addition to literal string key representations like "a", "6", and "[", keys such as the arrow keys,
+ * command, control, option, and function keys can be typed using constants defined for them in XCUIKeyboardKeys.h
+ */
+- (void)typeKey:(NSString *)key modifierFlags:(XCUIKeyModifierFlags)flags;
+
+#endif // TARGET_OS_OSX
+
+@end
+
+#if TARGET_OS_IOS
+
+@interface XCUIElement (XCUIElementTouchEvents)
 
 /*!
  * Sends a tap event to a hittable point computed for the element.
@@ -181,7 +203,13 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
  */
 - (void)rotate:(CGFloat)rotation withVelocity:(CGFloat)velocity;
 
-#elif TARGET_OS_MAC
+@end
+
+#endif // TARGET_OS_IOS
+
+#if TARGET_OS_OSX
+
+@interface XCUIElement (XCUIElementMouseEvents)
 
 /*!
  * Moves the cursor over the element.
@@ -210,28 +238,45 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
 - (void)clickForDuration:(NSTimeInterval)duration thenDragToElement:(XCUIElement *)otherElement;
 
 /*!
- * Hold modifier keys while the given block runs. This method pushes and pops the modifiers as global state
- * without need for reference to a particular element. Inside the block, elements can be clicked on, dragged
- * from, typed into, etc.
- */
-+ (void)performWithKeyModifiers:(XCUIKeyModifierFlags)flags block:(void (^)(void))block;
-
-/*!
- * Types a single key with the specified modifier flags. Although `key` is a string, it must represent
- * a single key on a physical keyboard; strings that resolve to multiple keys will raise an error at runtime.
- * In addition to literal string key representations like "a", "6", and "[", keys such as the arrow keys,
- * command, control, option, and function keys can be typed using constants defined for them in XCUIKeyboardKeys.h
- */
-- (void)typeKey:(NSString *)key modifierFlags:(XCUIKeyModifierFlags)flags;
-
-/*!
  * Scroll the view the specified pixels, x and y.
  */
 - (void)scrollByDeltaX:(CGFloat)deltaX deltaY:(CGFloat)deltaY;
 
-#endif
+@end
+
+/*! This category on XCUIElement provides functionality for automating elements in the Touch Bar. */
+@interface XCUIElement (XCUIElementTouchBarEvents)
+
+/*!
+ * Sends a tap event to a central point computed for the element.
+ */
+- (void)tap;
+
+/*!
+ * Sends a double tap event to a central point computed for the element.
+ */
+- (void)doubleTap;
+
+/*!
+ * Sends a long press gesture to a central point computed for the element, holding for the specified duration.
+ *
+ * @param duration
+ * Duration in seconds.
+ */
+- (void)pressForDuration:(NSTimeInterval)duration;
+
+/*!
+ * Initiates a press-and-hold gesture that then drags to another element.
+ * @param duration
+ * Duration of the initial press-and-hold.
+ * @param otherElement
+ * The element to finish the drag gesture over.
+ */
+- (void)pressForDuration:(NSTimeInterval)duration thenDragToElement:(XCUIElement *)otherElement;
 
 @end
+
+#endif // TARGET_OS_OSX
 
 /*! This category on XCUIElement provides functionality for automating UISlider and NSSlider. */
 @interface XCUIElement (XCUIElementTypeSlider)
@@ -254,7 +299,7 @@ NS_CLASS_AVAILABLE(10_11, 9_0)
 
 @end
 
-#endif
+#endif // TARGET_OS_IOS
 
 #endif
 

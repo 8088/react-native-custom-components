@@ -1,7 +1,8 @@
 dependencies: \
-  /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTDataRequestHandler.m \
-  /Users/liujunli/work/www/2016/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTDataRequestHandler.h \
-  ../../React/Base/RCTURLRequestHandler.h \
-  ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTDefines.h \
-  ../../React/Base/RCTURLRequestDelegate.h \
-  ../../React/Base/RCTInvalidating.h
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTDataRequestHandler.m \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/node_modules/react-native/Libraries/Network/RCTDataRequestHandler.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestHandler.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/liujunli/work/www/2017/react-native/labs/CustomComponent/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h
