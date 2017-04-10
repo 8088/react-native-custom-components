@@ -1,7 +1,7 @@
 # react-native-custom-components
 React Native custom components for iOS + Android
 
-![components preview](https://github.com/8088/react-native-custom-components/blob/master/example/component_preview.jpg)
+![components preview](https://github.com/8088/react-native-custom-components/blob/master/example/component_preview.gif)
 
 ## Installation
 ```
