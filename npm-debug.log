@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/liujunli/work/www/8088_GITHUB/react-native-custom-components',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/liujunli/.npm/react-native-custom-components/1.1.0/package.tgz not in flight; packing
+9 info lifecycle react-native-custom-components@1.1.0~prepublish: react-native-custom-components@1.1.0
+10 silly lifecycle react-native-custom-components@1.1.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/liujunli/.npm/react-native-custom-components/1.1.0/package.tgz',
+11 verbose tar pack   '/Users/liujunli/work/www/8088_GITHUB/react-native-custom-components' ]
+12 verbose tarball /Users/liujunli/.npm/react-native-custom-components/1.1.0/package.tgz
+13 verbose folder /Users/liujunli/work/www/8088_GITHUB/react-native-custom-components
+14 verbose addLocalTarball adding from inside cache /Users/liujunli/.npm/react-native-custom-components/1.1.0/package.tgz
+15 silly cache afterAdd react-native-custom-components@1.1.0
+16 verbose afterAdd /Users/liujunli/.npm/react-native-custom-components/1.1.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/liujunli/.npm/react-native-custom-components/1.1.0/package/package.json written
+18 silly publish { name: 'react-native-custom-components',
+18 silly publish   version: '1.1.0',
+18 silly publish   description: 'React Native custom components for iOS + Android',
+18 silly publish   main: 'index.js',
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/8088/react-native-custom-components.git' },
+18 silly publish   keywords:
+18 silly publish    [ 'react-native',
+18 silly publish      'react-native ui',
+18 silly publish      'react-native component',
+18 silly publish      'react-native button',
+18 silly publish      'react-native stepper',
+18 silly publish      'react-native toggle button',
+18 silly publish      'react-native html',
+18 silly publish      'react-native editor',
+18 silly publish      'react-native slide',
+18 silly publish      'react-native tabbar' ],
+18 silly publish   author: { name: '8088' },
+18 silly publish   license: 'GPL-3.0',
+18 silly publish   bugs: { url: 'https://github.com/8088/react-native-custom-components/issues' },
+18 silly publish   homepage: 'https://github.com/8088/react-native-custom-components#readme',
+18 silly publish   dependencies:
+18 silly publish    { 'react-native-vector-icons': '^4.0.1',
+18 silly publish      'react-static-container': '^1.0.1' },
+18 silly publish   readme: '# react-native-custom-components\nReact Native custom components for iOS + Android\n\n![components preview](https://github.com/8088/react-native-custom-components/blob/master/example/component_preview.gif)\n\n## Installation\n```\nnpm install --save react-native-custom-components\n```\n\n## Usage example\n\nSee example/app/index.js for a more detailed example.\nSee the [Wiki](https://github.com/8088/react-native-custom-components/wiki) usage tips.\n',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '30777d6b02c58f530403fda9dd16ecf17da8f64b',
+18 silly publish   _id: 'react-native-custom-components@1.1.0',
+18 silly publish   _shasum: 'da1b36617734fa2ae8384e32878a8a5469d6c10e',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name react-native-custom-components
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npm.taobao.org/
+23 silly mapToRegistry uri https://registry.npm.taobao.org/react-native-custom-components
+24 verbose publish registryBase https://registry.npm.taobao.org/
+25 silly publish uploading /Users/liujunli/.npm/react-native-custom-components/1.1.0/package.tgz
+26 verbose request uri https://registry.npm.taobao.org/react-native-custom-components
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 22:18:20
+29 verbose request id fe430aeddfec78d4
+30 http request PUT https://registry.npm.taobao.org/react-native-custom-components
+31 http 413 https://registry.npm.taobao.org/react-native-custom-components
+32 verbose bad json <html>
+32 verbose bad json <head><title>413 Request Entity Too Large</title></head>
+32 verbose bad json <body bgcolor="white">
+32 verbose bad json <center><h1>413 Request Entity Too Large</h1></center>
+32 verbose bad json <hr><center>nginx/1.4.6 (Ubuntu)</center>
+32 verbose bad json </body>
+32 verbose bad json </html>
+33 error registry error parsing json
+34 verbose headers { date: 'Mon, 10 Apr 2017 14:18:24 GMT',
+34 verbose headers   'content-type': 'text/html',
+34 verbose headers   'content-length': '207',
+34 verbose headers   connection: 'keep-alive' }
+35 verbose request invalidating /Users/liujunli/.npm/registry.npm.taobao.org/react-native-custom-components on PUT
+36 error publish Failed PUT 413
+37 verbose stack SyntaxError: Unexpected token <
+37 verbose stack <html>
+37 verbose stack <head><title>413 Request Entity Too Large</title></head>
+37 verbose stack <body bgcolor="white">
+37 verbose stack <center><h1>413 Request Entity Too Large</h1></center>
+37 verbose stack <hr><center>nginx/1.4.6 (Ubuntu)</center>
+37 verbose stack </body>
+37 verbose stack </html>
+37 verbose stack
+37 verbose stack     at Object.parse (native)
+37 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:199:23)
+37 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+37 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+37 verbose stack     at emitTwo (events.js:87:13)
+37 verbose stack     at Request.emit (events.js:172:7)
+37 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+37 verbose stack     at emitOne (events.js:82:20)
+37 verbose stack     at Request.emit (events.js:169:7)
+37 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+38 verbose cwd /Users/liujunli/work/www/8088_GITHUB/react-native-custom-components
+39 error Darwin 15.6.0
+40 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+41 error node v5.3.0
+42 error npm  v3.3.12
+43 error Unexpected token <
+43 error <html>
+43 error <head><title>413 Request Entity Too Large</title></head>
+43 error <body bgcolor="white">
+43 error <center><h1>413 Request Entity Too Large</h1></center>
+43 error <hr><center>nginx/1.4.6 (Ubuntu)</center>
+43 error </body>
+43 error </html>
+44 error If you need help, you may report this error at:
+44 error     <https://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
