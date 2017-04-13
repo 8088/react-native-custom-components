@@ -10,7 +10,7 @@ npm install --save git+git@github.com:8088/react-native-custom-components.git
 
 ## Usage example
 
-See example/app/index.js for a more detailed example.
+See [example/app/index.js](https://github.com/8088/react-native-custom-components/blob/master/example/app/index.js) for a more detailed example.
 See the [Wiki](https://github.com/8088/react-native-custom-components/wiki) usage tips.
 ```
 import {
