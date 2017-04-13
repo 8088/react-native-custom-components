@@ -5,7 +5,7 @@ React Native custom components for iOS + Android （自定义组件只帮你实�
 
 ## Installation
 ```
-npm install --save react-native-custom-components
+npm install --save git+git@github.com:8088/react-native-custom-components.git
 ```
 
 ## Usage example
