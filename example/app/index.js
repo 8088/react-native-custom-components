@@ -18,6 +18,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import {       
     Button,
     ToggleButton,
+    RadioButton,
+    RadioGroup,
     Stepper,
     HtmlView,
     InputEditor,
@@ -316,8 +318,86 @@ export default class App extends Component {
                     </Module>
 
                     <Module title='单选控件'>
-                        <Text style={styles.color_gray}>TODO: 多个切换控件相关联 组成单选控件</Text>
+                        <RadioButton
+                            elementId="myRadio"
+                            onPress={this._onRadioPress}
+                            style={[styles.flex_row, styles.align_center]}
+                            renderChecked={()=>{
+                                return (
+                                    <View style={[styles.flex_row, styles.align_center]}>
+                                        <View style={styles.radio_btn}>
+                                            <View style={styles.radio_btn_checked}/>
+                                        </View>
+                                        <Text style={styles.radio_txt}>选中后不可单独取消</Text>
+                                    </View>
+                                );
+                            }}>
+                            <View style={styles.radio_btn} />
+                            <Text style={styles.radio_txt}>一个单独的单选控件</Text>
+                        </RadioButton>
+                        <View style={styles.separator} />
+                        <RadioGroup name={'radio1'} selected={radio} style={styles.flex_row} onChanged={this._onRadioChanged}>
+
+                            <RadioButton
+                                style={[styles.flex_row, styles.align_center, styles.margin_right_10]}
+                                renderChecked={()=>{
+                                    return (
+                                        <View style={[styles.flex_row, styles.align_center, styles.margin_right_10]}>
+                                            <View style={styles.radio_btn}>
+                                                <View style={styles.radio_btn_checked}/>
+                                            </View>
+                                            <Text style={styles.radio_txt}>选项一</Text>
+                                        </View>
+                                    );
+                                }}>
+                                <View style={styles.radio_btn} />
+                                <Text style={styles.radio_txt}>选项一</Text>
+                            </RadioButton>
+
+                            <RadioButton
+                                style={[styles.flex_row, styles.align_center, styles.margin_right_10]}
+                                renderChecked={()=>{
+                                    return (
+                                        <View style={[styles.flex_row, styles.align_center, styles.margin_right_10]}>
+                                            <View style={styles.radio_btn}>
+                                                <View style={styles.radio_btn_checked}/>
+                                            </View>
+                                            <Text style={styles.radio_txt}>选项二</Text>
+                                        </View>
+                                    );
+                                }}>
+                                <View style={styles.radio_btn} />
+                                <Text style={styles.radio_txt}>选项二</Text>
+                            </RadioButton>
+
+                            <RadioButton
+                                style={[styles.flex_row, styles.align_center]}
+                                renderChecked={()=>{
+                                    return (
+                                        <View style={[styles.flex_row, styles.align_center]}>
+                                            <View style={styles.radio_btn}>
+                                                <View style={styles.radio_btn_checked}/>
+                                            </View>
+                                            <Text style={styles.radio_txt}>选项三</Text>
+                                        </View>
+                                    );
+                                }}>
+                                <View style={styles.radio_btn} />
+                                <Text style={styles.radio_txt}>选项三</Text>
+                            </RadioButton>
+
+                        </RadioGroup>
+
+                        <View style={[styles.flex_row, styles.margin_top_5]}>
+                            <Button onPress={()=>alert(this.state.radio)} style={[styles.btn_default, styles.margin_right_5]} elementId={'btn1'} >
+                                <Text style={[styles.color_deep,styles.font_size_14]}>Get index</Text>
+                            </Button>
+                            <Button onPress={()=>this.setState({radio:0})} style={[styles.btn_default, styles.margin_right_5]} elementId={'btn1'} >
+                                <Text style={[styles.color_deep,styles.font_size_14]}>Set index(0)</Text>
+                            </Button>
+                        </View>
                     </Module>
+
                     <Module title='多选控件'>
                         <Text style={styles.color_gray}>TODO: 多个切换控件相关联 组成多选控件</Text>
                     </Module>
@@ -465,6 +545,16 @@ export default class App extends Component {
         }, 0);
     }
 
+    _onRadioPress=(evt)=>{
+        var radio = evt.target;
+        radio.setState({checked:true});
+    }
+
+    _onRadioChanged=(index)=>{
+        this.setState({radio:index});
+        alert('select changed: '+index);
+    }
+
 
 
 
@@ -583,6 +673,30 @@ const styles = StyleSheet.create({
         textAlign:'center',
         color: '#777',
     },
+
+
+
+    //radio button
+    radio_btn: {
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: Colors.gray,
+        height: 20,
+        width: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    radio_btn_checked: {
+        borderRadius: 7,
+        backgroundColor: Colors.pink_translucent,
+        height: 14,
+        width: 14,
+    },
+    radio_txt:{
+        color: Colors.deep,
+        marginLeft: 5,
+    },
+
 
 
     text_input: {
@@ -704,5 +818,10 @@ const styles = StyleSheet.create({
     },
     module_body: {
         padding: 15,
-    }
+    },
+    separator: {
+        height: StyleSheet.hairlineWidth,
+        backgroundColor: '#eee',
+        marginVertical: 10,
+    },
 });
