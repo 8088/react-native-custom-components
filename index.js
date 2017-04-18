@@ -7,5 +7,8 @@ import SlideBox from './src/components/SlideBox';
 import Tabbar from './src/components/Tabbar';
 import Tabbody from './src/components/Tabbody';
 import Stepper from './src/components/Stepper';
+import RadioButton from './src/components/RadioButton';
+import RadioGroup from './src/components/RadioGroup';
+import CheckBox from './src/components/CheckBox';
 
-export {Button, ToggleButton, HtmlView, InputEditor, ScrollBox, SlideBox, Tabbar, Tabbody, Stepper}
+export {Button, ToggleButton, HtmlView, InputEditor, ScrollBox, SlideBox, Tabbar, Tabbody, Stepper, RadioButton, RadioGroup, CheckBox}

@@ -28,7 +28,7 @@ export default class Stepper extends PureComponent {
         elementType: 'Stepper',
         elementId: null,
         disabled: false,
-        onChanged: ()=>{},
+        onChanged: (num)=>{},
         style: null,
         initValue: 0,
         minValue:0,

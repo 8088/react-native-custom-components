@@ -23,6 +23,9 @@ import {
     ScrollBox,
     Tabbar,
     Tabbody,
+    RadioButton,
+    RadioGroup,
+    CheckBox,
 } from 'react-native-custom-components';
 
 //ScrollBox

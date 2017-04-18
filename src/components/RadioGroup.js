@@ -14,7 +14,6 @@ import RadioButton from './RadioButton';
 
 export default class RadioGroup extends PureComponent {
     static propTypes = {
-        name: PropTypes.string.isRequired,
         elementType: PropTypes.string,
         elementId: PropTypes.any,
         disabled: PropTypes.bool,
@@ -52,7 +51,7 @@ export default class RadioGroup extends PureComponent {
 
     componentDidMount() {
         if(this.props.selected>=0){
-            this.last_select_radio = this.refs[this.props.name+'_'+this.props.selected];
+            this.last_select_radio = this.refs[this.props.elementId+'_'+this.props.selected];
         }
     }
 
@@ -62,7 +61,7 @@ export default class RadioGroup extends PureComponent {
 
     componentWillReceiveProps(props){
         if(props.selected!==this.props.selected){
-            var radio = this.refs[this.props.name+'_'+props.selected];
+            var radio = this.refs[this.props.elementId+'_'+props.selected];
             this._onSelect(radio);
         }
     }
@@ -89,7 +88,7 @@ export default class RadioGroup extends PureComponent {
             {
                 props.disabled = this.props.disabled;
                 props.index = this._len++;
-                props.ref = this.props.name+'_'+props.index;
+                props.ref = this.props.elementId+'_'+props.index;
                 if(this.props.selected>=0&&this.props.selected===props.index){
                     props.checked = true;
                 }

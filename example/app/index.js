@@ -27,6 +27,9 @@ import {
     ScrollBox,
     Tabbar,
     Tabbody,
+    RadioButton,
+    RadioGroup,
+    CheckBox,
 } from 'react-native-custom-components';
 import Network from './mixins/Network';
 import Colors from './assets/Colors';
@@ -399,7 +402,138 @@ export default class App extends Component {
                     </Module>
 
                     <Module title='多选控件'>
-                        <Text style={styles.color_gray}>TODO: 多个切换控件相关联 组成多选控件</Text>
+                        <View style={styles.flex_row}>
+                            <CheckBox
+                                elementId="myCheckBox"
+                                disabled={false}
+                                checked={false}>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box}/>
+                                    <Text style={styles.check_box_txt}>单个复选框</Text>
+                                </Button>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box_checked}>
+                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color='#FE7A93'/>
+                                    </View>
+                                    <Text style={styles.check_box_txt}>勾选复选框</Text>
+                                </Button>
+                            </CheckBox>
+
+                            <CheckBox
+                                style={styles.margin_left_10}
+                                disabled={true}
+                                checked={true}>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box}/>
+                                    <Text style={styles.check_box_txt}>单个复选框</Text>
+                                </Button>
+                                <Button style={[styles.flex_row, styles.align_center]}
+                                        renderDisabled={()=>{
+                                            return(
+                                                <View style={[styles.flex_row, styles.align_center]}>
+                                                    <View style={[styles.check_box_checked, {borderColor:Colors.gray}]}>
+                                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color={Colors.gray}/>
+                                                    </View>
+                                                    <Text style={[styles.check_box_txt,{color:Colors.gray}]}>禁用复选框</Text>
+                                                </View>
+                                            );
+                                        }}>
+                                    <View style={styles.check_box_checked}>
+                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color='#FE7A93'/>
+                                    </View>
+                                    <Text style={styles.check_box_txt}>勾选复选框</Text>
+                                </Button>
+                            </CheckBox>
+                        </View>
+                        <View style={styles.separator} />
+                        <View style={styles.flex_row}>
+                            <CheckBox
+                                ref='check0'
+                                disabled={false}
+                                checked={true}
+                                onPress={this._onCheck}>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box}/>
+                                    <Text style={styles.check_box_txt}>选项一</Text>
+                                </Button>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box_checked}>
+                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color='#FE7A93'/>
+                                    </View>
+                                    <Text style={styles.check_box_txt}>选项一</Text>
+                                </Button>
+                            </CheckBox>
+                            <CheckBox
+                                ref='check1'
+                                style={styles.margin_left_10}
+                                disabled={false}
+                                checked={false}
+                                onPress={this._onCheck}>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box}/>
+                                    <Text style={styles.check_box_txt}>选项二</Text>
+                                </Button>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box_checked}>
+                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color='#FE7A93'/>
+                                    </View>
+                                    <Text style={styles.check_box_txt}>选项二</Text>
+                                </Button>
+                            </CheckBox>
+                            <CheckBox
+                                ref='check2'
+                                style={styles.margin_left_10}
+                                disabled={false}
+                                checked={false}
+                                onPress={this._onCheck}>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box}/>
+                                    <Text style={styles.check_box_txt}>选项二</Text>
+                                </Button>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box_checked}>
+                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color='#FE7A93'/>
+                                    </View>
+                                    <Text style={styles.check_box_txt}>选项二</Text>
+                                </Button>
+                            </CheckBox>
+                        </View>
+
+                        <View style={styles.margin_top_10} />
+                        <View style={styles.flex_row}>
+                            <CheckBox
+                                ref='allCheck'
+                                disabled={false}
+                                checked={false}
+                                onPress={this._onCheckAll}>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box}/>
+                                    <Text style={styles.check_box_txt}>关联全选</Text>
+                                </Button>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box_checked}>
+                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color='#FE7A93'/>
+                                    </View>
+                                    <Text style={styles.check_box_txt}>关联全选</Text>
+                                </Button>
+                            </CheckBox>
+                            <CheckBox
+                                style={styles.margin_left_10}
+                                disabled={false}
+                                checked={false}
+                                onPress={this._onSelectCheck}>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box}/>
+                                    <Text style={styles.check_box_txt}>不关联只选[0,2]</Text>
+                                </Button>
+                                <Button style={[styles.flex_row, styles.align_center]}>
+                                    <View style={styles.check_box_checked}>
+                                        <Icon style={{backgroundColor:'transparent'}} name='md-checkmark' size={14} color='#FE7A93'/>
+                                    </View>
+                                    <Text style={styles.check_box_txt}>不关联只选[0,2]</Text>
+                                </Button>
+                            </CheckBox>
+                        </View>
                     </Module>
                     <Module title='测试POST数据'>
                         <View style={[styles.flex_row, styles.flex_wrap]}>
