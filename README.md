@@ -2,9 +2,7 @@
 React Native custom components for iOS + Android 
 
 Preview:
-
 ![components preview](https://github.com/8088/react-native-custom-components/blob/master/example/component_preview.gif)
-
 Note: custom components only help you achieve functional logic, the components of the UI, style, layout can be customized by youself.
 
 ## Installation
