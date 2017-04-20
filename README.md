@@ -1,7 +1,11 @@
 # react-native-custom-components
-React Native custom components for iOS + Android （自定义组件只帮你实现功能逻辑，各组件的UI、样式、布局可均由你自定义）
+React Native custom components for iOS + Android 
+
+Preview:
 
 ![components preview](https://github.com/8088/react-native-custom-components/blob/master/example/component_preview.gif)
+
+Note: custom components only help you achieve functional logic, the components of the UI, style, layout can be customized by youself.
 
 ## Installation
 ```
