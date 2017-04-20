@@ -689,8 +689,37 @@ export default class App extends Component {
         alert('select changed: '+index);
     }
 
+    _onCheckAll=(evt)=>{
+        var allcheckbox = evt.target;
+        setTimeout(()=>{
+            this.checkgroup.forEach((checkbox)=>{
+                checkbox.setState({checked:allcheckbox.state.checked})
+            })
+        }, 0);
+    }
 
+    _onCheck=(evt)=>{
+        var checkbox = evt.target;
+        setTimeout(()=>{
+            var temp =this.checkgroup.filter((checkbox)=>{
+                return checkbox.state.checked;
+            })
 
+            if(temp.length===3) this.allcheck.setState({checked:true});
+            else this.allcheck.setState({checked:false});
+        }, 0);
+    }
+
+    _onSelectCheck=(evt)=>{
+        var slelect = evt.target;
+        setTimeout(()=>{
+            this.checkgroup.forEach((checkbox,index)=>{
+                if(index===1) checkbox.setState({checked:false})
+                else checkbox.setState({checked:slelect.state.checked})
+            });
+            this.allcheck.setState({checked:false})
+        }, 0);
+    }
 
 }
 
@@ -809,7 +838,6 @@ const styles = StyleSheet.create({
     },
 
 
-
     //radio button
     radio_btn: {
         borderRadius: 10,
@@ -827,6 +855,31 @@ const styles = StyleSheet.create({
         width: 14,
     },
     radio_txt:{
+        color: Colors.deep,
+        marginLeft: 5,
+    },
+
+
+    //check box
+    check_box:{
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: Colors.pink,
+        height: 20,
+        width: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    check_box_checked:{
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: Colors.pink,
+        height: 20,
+        width: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    check_box_txt:{
         color: Colors.deep,
         marginLeft: 5,
     },
