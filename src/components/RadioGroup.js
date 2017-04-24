@@ -27,7 +27,7 @@ export default class RadioGroup extends PureComponent {
         elementId: null,
         disabled: false,
         selected: -1,
-        onChanged: (index)=>{},
+        onChanged: (index)=>{return true;},
         style: null,
     };
 
@@ -55,14 +55,31 @@ export default class RadioGroup extends PureComponent {
         }
     }
 
-    shouldComponentUpdate(){
+    shouldComponentUpdate(nextPorps, nextState){
         return false;
     }
 
     componentWillReceiveProps(props){
+        if(props.selected<0 || props.selected>=this._len) return;
+
         if(props.selected!==this.props.selected){
             var radio = this.refs[this.props.elementId+'_'+props.selected];
             this._onSelect(radio);
+        }
+
+        if(props.disabled!==this.props.disabled)
+        {
+            for(var i=0; i!=this._len; i++){
+                var _radio = this.refs[this.props.elementId+'_'+i];
+                if(_radio) _radio.setState({disabled:true});
+            }
+        }
+    }
+
+    reset=()=>{
+        if(this.last_select_radio){
+            this.last_select_radio.setState({checked:false});
+            this.last_select_radio=null;
         }
     }
 
@@ -80,10 +97,9 @@ export default class RadioGroup extends PureComponent {
 
     _createElement=(elements)=>{
         return React.Children.map(elements, (element, index) => {
-            if (typeof element !== 'object') return element;
+            if (typeof element !== 'object' || !element) return element;
 
             let props = {};
-
             if(element.props.elementType==='RadioButton')
             {
                 props.disabled = this.props.disabled;
@@ -108,14 +124,16 @@ export default class RadioGroup extends PureComponent {
         if(this.last_select_radio){
             if(this.last_select_radio===radio) return;
             else this.last_select_radio.setState({checked:false});
+            this.last_select_radio=null;
         }
 
         radio.setState({checked:true});
 
         this.last_select_radio = radio;
-
         this.props.onChanged(radio.props.index);
     }
+
+
 
 }
 
