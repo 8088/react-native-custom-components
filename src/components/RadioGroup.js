@@ -38,6 +38,7 @@ export default class RadioGroup extends PureComponent {
         };
 
         this._len = 0;
+        this._selected = props.selected;
         this.last_select_radio = null;
 
         try{
@@ -50,8 +51,8 @@ export default class RadioGroup extends PureComponent {
     }
 
     componentDidMount() {
-        if(this.props.selected>=0){
-            this.last_select_radio = this.refs[this.props.elementId+'_'+this.props.selected];
+        if(this._selected>=0){
+            this.last_select_radio = this.refs[this.props.elementId+'_'+this._selected];
         }
     }
 
@@ -62,8 +63,9 @@ export default class RadioGroup extends PureComponent {
     componentWillReceiveProps(props){
         if(props.selected<0 || props.selected>=this._len) return;
 
-        if(props.selected!==this.props.selected){
-            var radio = this.refs[this.props.elementId+'_'+props.selected];
+        if(props.selected!==this._selected){
+            this._selected = props.selected;
+            var radio = this.refs[this.props.elementId+'_'+this._selected];
             this._onSelect(radio);
         }
 
@@ -81,6 +83,25 @@ export default class RadioGroup extends PureComponent {
             this.last_select_radio.setState({checked:false});
             this.last_select_radio=null;
         }
+    }
+
+    select=(index)=>{
+        if(index<0 || index>=this._len) return;
+
+        if(index!==this._selected){
+            this._selected = index;
+            var radio = this.refs[this.props.elementId+'_'+this._selected];
+
+            if(this.last_select_radio){
+                if(this.last_select_radio===radio) return;
+                else this.last_select_radio.setState({checked:false});
+                this.last_select_radio=null;
+            }
+            radio.setState({checked:true});
+
+            this.last_select_radio = radio;
+        }
+
     }
 
     render() {
@@ -105,7 +126,7 @@ export default class RadioGroup extends PureComponent {
                 props.disabled = this.props.disabled;
                 props.index = this._len++;
                 props.ref = this.props.elementId+'_'+props.index;
-                if(this.props.selected>=0&&this.props.selected===props.index){
+                if(this._selected>=0&&this._selected===props.index){
                     props.checked = true;
                 }
                 props.onPress = (evt)=>{
@@ -129,8 +150,9 @@ export default class RadioGroup extends PureComponent {
 
         radio.setState({checked:true});
 
+        this._selected = radio.props.index;
         this.last_select_radio = radio;
-        this.props.onChanged(radio.props.index);
+        this.props.onChanged(this._selected);
     }
 
 
